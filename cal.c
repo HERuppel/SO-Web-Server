@@ -20,7 +20,7 @@ static char* page_end =
   " </body>\n"
   "</html>\n";
 
-// URL Params for GET METHOD
+// URL Params used in server.c for GET METHOD
 extern char* req_params; 
 
 void module_generate (int fd)

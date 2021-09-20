@@ -18,6 +18,10 @@
 
 #include "server.h"
 
+
+// Matching URL Params for extern variable req_params declared in other modules
+char* req_params;
+
 /* HTTP response and header for a successful request.  */
 
 static char* ok_response =
@@ -69,8 +73,6 @@ static char* bad_method_response_template =
 
 /* Handler for SIGCHLD, to clean up child processes that have
    terminated.  */
-
-char* req_params;
 
 static void clean_up_child_process (int signal_number)
 {
